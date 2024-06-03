@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+/* Typographic tweaks below: Add accessible line-height & Improve text rendering */
+body {
+  font-family: Jura, Helvetica, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div {
+  overflow-wrap: break-word;
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* ---------------------------------------------------------------------------- */
+.nav {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 1048px;
+}
+.nav .nav__icon > svg {
+  fill: rgb(234, 144, 16);
+  width: 100px;
+  height: 100px;
+  margin-left: 40px;
+}
+.nav .nav__menu {
+  margin-left: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.nav .nav__menu .nav__button {
+  font-size: 32px;
+  margin-right: 40px;
+  color: rgb(250, 243, 221);
+  font-weight: 600px;
+  position: relative;
+  transition: color 0.4s ease-in-out;
+}
+.nav .nav__menu .nav__button:hover {
+  cursor: pointer;
+  color: rgb(234, 144, 16);
+}
+.nav .nav__menu .nav__button::after {
+  content: "";
+  width: 110%;
+  height: 0.0625em;
+  background: rgb(234, 144, 16);
+  position: absolute;
+  bottom: -0.2em;
+  left: -5%;
+  transform: scaleY(0);
+  transition: transform 0.4s ease-in-out;
+}
+.nav .nav__menu .nav__button:hover::after {
+  transform: scaleY(1);
+}
+.nav .nav__menu .nav__button--disabled {
+  color: rgb(136, 150, 171);
+}
+.nav .nav__menu .nav__button--disabled:hover {
+  color: rgb(136, 150, 171);
+  cursor: not-allowed;
+}
+.nav .nav__menu .nav__button--disabled:hover::after {
+  content: "";
+  transform: scaleY(0);
+}
+.nav .nav__menu .nav__media {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-underline {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(234, 144, 16, 0.4);
+}
+
+.not-found {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not-found .not-found__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not-found .not-found__container .not-found__message {
+  font-size: 32px;
+  color: #b26e63;
+}
+.not-found .not-found__container .not-found__icon > svg {
+  fill: #b26e63;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.page-header {
+  font-size: 24px;
+  width: 100%;
+  margin: 16px auto;
+  color: rgb(250, 243, 221);
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(42, 52, 57);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*# sourceMappingURL=globalStyles.css.map */

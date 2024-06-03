@@ -1,8 +1,10 @@
-<nav>
-  <ul>
-    <li><a href="/" style="color: seagreen">Home</li>
-    <li><a href="./bikeServices.ejs" style="color: seagreen">Bike Service</li>
-    <li><a href="./gallery.ejs" style="color: seagreen">Gallery</li>
-    <li><a href="./contact.ejs" style="color: seagreen">Contact</li>
+<nav class="nav">
+  <a href="/" class="nav__icon"> <%- include('./bike-icon.ejs') %> </a>
+  <ul class="nav__menu">
+    <li><a class="nav__button" href="/">Home</a></li>
+    <li><a class="nav__button" href="./bikeServices.ejs">Bike Service</a></li>
+    <li><a class="nav__button nav__button--disabled" href="./gallery.ejs">Gallery</a></li>
+    <li><a class="nav__button" href="./contact.ejs">Contact</a></li>
   </ul>
 </nav>
+<div class="nav-underline" />

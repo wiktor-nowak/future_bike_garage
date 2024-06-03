@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+/* Typographic tweaks below: Add accessible line-height & Improve text rendering */
+body {
+  font-family: Jura, Helvetica, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div {
+  overflow-wrap: break-word;
+}
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+$gunmetal: rgba(42, 52, 57, 1);
+$carrot-orange: rgba(234, 144, 16, 1);
+$eggshell: rgba(250, 243, 221, 1);
+$cool-gray: rgba(136, 150, 171, 1);
+$dimmed-carrot: rgba(234, 144, 16, 0.4);
+$redwood: #b26e63;
+
+$font-size-huge: 32px;
+$font-size-big: 24px;
+
+@import "navStyles";
+@import "404Styles";
+@import "indexStyles";
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: $gunmetal;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}

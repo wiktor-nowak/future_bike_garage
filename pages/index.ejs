@@ -1,23 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Future Bike Garage</title>
-  </head>
+  <%- include('./partials/head.ejs', { title: "Homepage" }) %>
   <body>
-    <main
-      style="
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-      "
-    >
+    <main>
       <%- include('./partials/nav.ejs') %>
-      <h3 style="color: seagreen; font-weight: 700">Welcome on our bikeshop webpage!</h3>
+      <h3 class="page-header">Welcome on our bikeshop webpage!</h3>
     </main>
   </body>
 </html>
